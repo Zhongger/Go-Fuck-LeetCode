@@ -13,10 +13,10 @@ func main() {
 		result := rand2.Intn(100000)
 		arr1 = append(arr1, result)
 	}
-	start1 := time.Now().Unix()
+	start1 := time.Now().UnixNano()/1e6
 	mergeSort(arr1)
 
-	end1 := time.Now().Unix()
+	end1 := time.Now().UnixNano()/1e6
 	fmt.Printf("10万随机数的排序耗时为：%d \n", end1-start1)
 
 	//20万随机数
@@ -25,9 +25,9 @@ func main() {
 		result := rand2.Intn(200000)
 		arr2 = append(arr2, result)
 	}
-	start2 := time.Now().Unix()
+	start2 := time.Now().UnixNano()/1e6
 	mergeSort(arr2)
-	end2 := time.Now().Unix()
+	end2 := time.Now().UnixNano()/1e6
 	fmt.Printf("20万随机数的排序耗时为：%d \n", end2-start2)
 
 	//40万随机数
@@ -36,9 +36,9 @@ func main() {
 		result := rand2.Intn(400000)
 		arr4 = append(arr4, result)
 	}
-	start4 := time.Now().Unix()
+	start4 := time.Now().UnixNano()/1e6
 	mergeSort(arr4)
-	end4 := time.Now().Unix()
+	end4 := time.Now().UnixNano()/1e6
 	fmt.Printf("40万随机数的排序耗时为：%d \n", end4-start4)
 
 	//70万随机数
@@ -47,9 +47,9 @@ func main() {
 		result := rand2.Intn(700000)
 		arr7 = append(arr7, result)
 	}
-	start7 := time.Now().Unix()
+	start7 := time.Now().UnixNano()/1e6
 	mergeSort(arr7)
-	end7 := time.Now().Unix()
+	end7 := time.Now().UnixNano()/1e6
 	fmt.Printf("70万随机数的排序耗时为：%d \n", end7-start7)
 
 	//100万随机数
@@ -58,9 +58,9 @@ func main() {
 		result := rand2.Intn(1000000)
 		arr10 = append(arr10, result)
 	}
-	start10 := time.Now().Unix()
+	start10 := time.Now().UnixNano()/1e6
 	mergeSort(arr10)
-	end10 := time.Now().Unix()
+	end10 := time.Now().UnixNano()/1e6
 	fmt.Printf("100万随机数的排序耗时为：%d \n", end10-start10)
 
 	//200万随机数
@@ -69,9 +69,9 @@ func main() {
 		result := rand2.Intn(2000000)
 		arr20 = append(arr20, result)
 	}
-	start20 := time.Now().Unix()
+	start20 := time.Now().UnixNano()/1e6
 	mergeSort(arr20)
-	end20 := time.Now().Unix()
+	end20 := time.Now().UnixNano()/1e6
 	fmt.Printf("200万随机数的排序耗时为：%d \n", end20-start20)
 
 	//400万随机数
@@ -80,9 +80,9 @@ func main() {
 		result := rand2.Intn(4000000)
 		arr40 = append(arr40, result)
 	}
-	start40 := time.Now().Unix()
+	start40 := time.Now().UnixNano()/1e6
 	mergeSort(arr40)
-	end40 := time.Now().Unix()
+	end40 := time.Now().UnixNano()/1e6
 	fmt.Printf("400万随机数的排序耗时为：%d \n", end40-start40)
 
 	//600万随机数
@@ -91,9 +91,9 @@ func main() {
 		result := rand2.Intn(6000000)
 		arr60 = append(arr60, result)
 	}
-	start60 := time.Now().Unix()
+	start60 := time.Now().UnixNano()/1e6
 	mergeSort(arr60)
-	end60 := time.Now().Unix()
+	end60 := time.Now().UnixNano()/1e6
 	fmt.Printf("600万随机数的排序耗时为：%d \n", end60-start60)
 
 	//900万随机数
@@ -102,9 +102,9 @@ func main() {
 		result := rand2.Intn(9000000)
 		arr90 = append(arr90, result)
 	}
-	start90 := time.Now().Unix()
+	start90 := time.Now().UnixNano()/1e6
 	mergeSort(arr90)
-	end90 := time.Now().Unix()
+	end90 := time.Now().UnixNano()/1e6
 	fmt.Printf("900万随机数的排序耗时为：%d \n", end90-start90)
 }
 func mergeSort(arr []int) []int {
